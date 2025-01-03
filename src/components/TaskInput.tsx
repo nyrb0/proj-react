@@ -1,4 +1,4 @@
-import { ChangeEvent, FC, InputHTMLAttributes, ReactNode } from "react";
+import { FC, InputHTMLAttributes, ReactNode } from "react";
 import styled from "styled-components";
 
 const InputStyled = styled.input`
