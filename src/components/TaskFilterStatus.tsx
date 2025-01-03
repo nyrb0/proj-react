@@ -23,7 +23,7 @@ const StatusesStyled = styled.li<{ isStatus: boolean }>`
     font-size: 20px;
   }
   @media (max-width: 450px) {
-    font-size: 15px;
+    font-size: 12px;
   }
 `;
 
@@ -31,7 +31,7 @@ const TaskFilterStatus: FC<TaskFilterStatusI> = ({ setStatus, value }) => {
   const category = { all: "Все", ...status };
 
   return (
-    <ul className="df jss" style={{ marginTop: 30 }}>
+    <ul className="df jss" style={{ marginTop: 30, width: "100%" }}>
       {Object.keys(category).map((s, i) => (
         <StatusesStyled
           isStatus={s === value}

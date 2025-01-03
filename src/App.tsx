@@ -19,6 +19,7 @@ import TaskFilterStatus from "./components/TaskFilterStatus";
 const Container = styled.div`
   max-width: 1120px;
   margin: 0 auto;
+  padding: 0 20px;
 `;
 const Position = styled.div`
   position: fixed;

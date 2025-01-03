@@ -5,16 +5,13 @@ import { MdDelete } from "react-icons/md";
 import { ListI, TypeTaskStatus } from "../types/List.type";
 
 const ListStyled = styled.li`
-  justify-content: space-between;
-  align-items: center;
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
   background: #242424;
   width: 100%;
   border-radius: 5px;
   min-height: 30px;
-  padding: 10px;
-  display: flex;
-  align-items: center;
+  padding: 10px 20px;
+  box-sizing: border-box;
 
   &:hover .edit-icon {
     visibility: visible;
@@ -39,10 +36,7 @@ const TheTask = styled.div`
 `;
 
 const EditAndDelete = styled.div`
-  width: 50px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  width: 60px;
 `;
 const EditIcon = styled(MdModeEditOutline)`
   visibility: hidden;
@@ -72,7 +66,7 @@ interface TaskI {
 
 const Task: FC<TaskI> = ({ task, deleteList, toEdit }) => {
   return (
-    <ListStyled>
+    <ListStyled className={`df jss`}>
       <div>
         <Title>Название: {task.title}</Title>
         <TheTask>
@@ -83,7 +77,7 @@ const Task: FC<TaskI> = ({ task, deleteList, toEdit }) => {
           Статус: <span>{task.status_work}</span>
         </StatusStyled>
       </div>
-      <EditAndDelete>
+      <EditAndDelete className="df jss aic">
         <EditIcon className="edit-icon" onClick={() => toEdit(task)} />
         <MdDelete
           onClick={() => {
