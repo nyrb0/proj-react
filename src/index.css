@@ -1,0 +1,14 @@
+:root {
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #181717;
+}
+
+body {
+  margin: 0;
+  white-space: wrap;
+  align-items: center;
+}
+
+button {
+  border: none;
+}
